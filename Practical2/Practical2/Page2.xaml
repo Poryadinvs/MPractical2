@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practical2.Page2">
+
+    <ScrollView>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="20">
+                <Button x:Name="btnBack" CornerRadius="50" WidthRequest="50" HorizontalOptions="Start" Clicked="btnBack_Clicked"></Button>
+                <Image  x:Name="logo" WidthRequest="100" HorizontalOptions="CenterAndExpand"></Image>
+                <Button x:Name="btnBag" CornerRadius="50" WidthRequest="50" HorizontalOptions="End"></Button>
+            </StackLayout>
+            <StackLayout Padding="20" HorizontalOptions="Center">
+                <RelativeLayout>
+                    <Image x:Name="item1" Aspect="AspectFill" HeightRequest="326" WidthRequest="350"></Image>
+                    <StackLayout WidthRequest="350">
+                        <Image x:Name="grade" HorizontalOptions="End" Aspect="AspectFill" HeightRequest="150" Margin="0, -20, 20, -45"></Image>
+                    </StackLayout>
+                </RelativeLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="20" HorizontalOptions="Center">
+                <Image x:Name="itemBack" WidthRequest="110" HeightRequest="110"></Image>
+                <Image x:Name="itemFront" WidthRequest="110" HeightRequest="110"></Image>
+                <Image x:Name="itemClose" WidthRequest="110" HeightRequest="110"></Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="20">
+                <StackLayout>
+                    <Label Text="Avoine Hooded" FontSize="25" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Quilted Jacket" FontSize="25" FontAttributes="Bold" TextColor="Black"/>
+                </StackLayout>
+                <Image x:Name="toWishList" HeightRequest="25" WidthRequest="25" Margin="150,0,0,0"></Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="20">
+                <Frame BackgroundColor="#F5F5F5" CornerRadius="21" WidthRequest="169" HeightRequest="122">
+                    <StackLayout>
+                        <Label Text="Choose" TextTransform="Uppercase" FontAttributes="Bold" TextColor="Black" FontSize="20"/>
+                        <Label Text="color" TextTransform="Uppercase" FontAttributes="Bold" TextColor="Black" FontSize="20"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="Black" CornerRadius="21" WidthRequest="169" HeightRequest="122">
+                    <StackLayout>
+                        <Label Text="Choose" TextTransform="Uppercase" FontAttributes="Bold" TextColor="White" FontSize="20"/>
+                        <Label Text="size" TextTransform="Uppercase" FontAttributes="Bold" TextColor="White" FontSize="20"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Padding="20">
+                <Frame WidthRequest="350" BackgroundColor="#EB6434" CornerRadius="21">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Checkout" TextColor="White" FontAttributes="Bold" TextTransform="Uppercase" FontSize="18"/>
+                        <Image x:Name="checkOut"/>
+                        <Label Text="$ 1500" TextColor="Black" Margin="150,0,0,0" FontSize="18" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

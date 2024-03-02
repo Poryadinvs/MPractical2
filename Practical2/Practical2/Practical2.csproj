@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ProduceReferenceAssemblyInOutDir>true</ProduceReferenceAssemblyInOutDir>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="arrofmt.png" />
+    <None Remove="arrowfull.png" />
+    <None Remove="back.png" />
+    <None Remove="bag.png" />
+    <None Remove="cart.png" />
+    <None Remove="category.png" />
+    <None Remove="color.png" />
+    <None Remove="frame.png" />
+    <None Remove="grade.png" />
+    <None Remove="itemback.png" />
+    <None Remove="itemcart.png" />
+    <None Remove="itemclose.png" />
+    <None Remove="itemfront.png" />
+    <None Remove="itemone.png" />
+    <None Remove="itempagetwo.png" />
+    <None Remove="itemtwo.png" />
+    <None Remove="priceone.png" />
+    <None Remove="pricetwo.png" />
+    <None Remove="size.png" />
+    <None Remove="vector.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="cart.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="color.png" />
+    <EmbeddedResource Include="frame.png" />
+    <EmbeddedResource Include="itemback.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="arrofmt.png" />
+    <EmbeddedResource Include="arrowfull.png" />
+    <EmbeddedResource Include="back.png" />
+    <EmbeddedResource Include="bag.png" />
+    <EmbeddedResource Include="category.png" />
+    <EmbeddedResource Include="grade.png" />
+    <EmbeddedResource Include="itemcart.png" />
+    <EmbeddedResource Include="itemclose.png" />
+    <EmbeddedResource Include="itemfront.png" />
+    <EmbeddedResource Include="itemone.png" />
+    <EmbeddedResource Include="itemtwo.png" />
+    <EmbeddedResource Include="priceone.png" />
+    <EmbeddedResource Include="pricetwo.png" />
+    <EmbeddedResource Include="itempagetwo.png" />
+    <EmbeddedResource Include="size.png" />
+    <EmbeddedResource Include="vector.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Page2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

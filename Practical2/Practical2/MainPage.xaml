@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practical2.MainPage">
+
+    <ScrollView>
+        <StackLayout >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="20">
+                <Button x:Name="btnCategory" CornerRadius="50" WidthRequest="50" HorizontalOptions="Start" Clicked="btnCategory_Clicked"></Button>
+                <Image  x:Name="logo" WidthRequest="100" HorizontalOptions="CenterAndExpand"></Image>
+                <Button x:Name="btnBag" CornerRadius="50" WidthRequest="50" HorizontalOptions="End"></Button>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="20">
+                <Frame BackgroundColor="#F4C600" WidthRequest="150" HeightRequest="150" CornerRadius="21">
+                    <StackLayout>
+                        <Label Text="Trending" TextColor="White" FontSize="25" FontAttributes="Bold"/>
+                        <Label Text="Products" TextColor="White" FontSize="25" FontAttributes="Bold"/>
+                        <Image x:Name="arrowFull" HeightRequest="25" HorizontalOptions="End" WidthRequest="40"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#EB6434" WidthRequest="150" HeightRequest="150" CornerRadius="21">
+                    <StackLayout>
+                        <Label Text="Sale" TextColor="White" FontSize="25" FontAttributes="Bold"/>
+                        <Label Text="Products" TextColor="White" FontSize="25" FontAttributes="Bold"/>
+                        <Image x:Name="arrowMt" HeightRequest="25" HorizontalOptions="End" WidthRequest="40"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Padding="20">
+                <Label Text="POPULAR PRODUCTS" FontSize="25" TextColor="Black" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Padding="20" HorizontalOptions="Center">
+                <RelativeLayout>
+                    <Image x:Name="item1" Aspect="AspectFill" HeightRequest="273" WidthRequest="350"></Image>
+                    <StackLayout WidthRequest="350">
+                        <Image x:Name="grade" HorizontalOptions="End" Aspect="AspectFill" HeightRequest="150" Margin="0, -20, 20, -45"></Image>
+                        <StackLayout Margin="21, 80, 0, 0">
+                            <Label Text="Avoine Hooded" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="Black"></Label>
+                            <Label Text="Quilted Jacket" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="Black"></Label>
+                        </StackLayout>
+                        <Image x:Name="price1" HorizontalOptions="Start" Aspect="AspectFill" HeightRequest="100" Margin="-25, -20, 0, 0" WidthRequest="190"></Image>
+                        <Button x:Name="btnToCart" BackgroundColor="Black" HeightRequest="65" WidthRequest="65" CornerRadius="21" HorizontalOptions="End" Margin="0, -120, 15, 0"></Button>
+                    </StackLayout>
+                </RelativeLayout>
+            </StackLayout>
+            <StackLayout Padding="20" HorizontalOptions="Center">
+                <RelativeLayout>
+                    <Image x:Name="item2" Aspect="AspectFill" HeightRequest="273" WidthRequest="350"></Image>
+                    <StackLayout WidthRequest="350">
+                        <Image x:Name="grade2" HorizontalOptions="End" Aspect="AspectFill" HeightRequest="150" Margin="0, -20, 20, -45"></Image>
+                        <StackLayout Margin="21, 60, 0, 0">
+                            <Label Text="Avoine Hooded" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="Black"></Label>
+                            <Label Text="Quilted Jacket" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="Black"></Label>
+                        </StackLayout>
+                        <Image x:Name="price2" HorizontalOptions="Start" Aspect="AspectFill" HeightRequest="100" Margin="-25, -20, 0, 0" WidthRequest="190"></Image>
+                        <Button x:Name="btnToCart2" BackgroundColor="Black" HeightRequest="65" WidthRequest="65" CornerRadius="21" HorizontalOptions="End" Margin="0, -100, 15, 0"></Button>
+                    </StackLayout>
+                </RelativeLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>
