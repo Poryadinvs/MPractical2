@@ -12,15 +12,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="applePay.png" />
     <None Remove="arrofmt.png" />
     <None Remove="arrowfull.png" />
     <None Remove="back.png" />
     <None Remove="bag.png" />
+    <None Remove="card.png" />
     <None Remove="cart.png" />
     <None Remove="category.png" />
     <None Remove="color.png" />
     <None Remove="countPill.png" />
     <None Remove="delete.png" />
+    <None Remove="dots.png" />
     <None Remove="frame.png" />
     <None Remove="grade.png" />
     <None Remove="itemback.png" />
@@ -31,12 +34,15 @@
     <None Remove="itemone.png" />
     <None Remove="itempagetwo.png" />
     <None Remove="itemtwo.png" />
+    <None Remove="MasterCard.png" />
+    <None Remove="PayPal.png" />
     <None Remove="priceone.png" />
     <None Remove="pricesOneCart.png" />
     <None Remove="pricetwo.png" />
     <None Remove="priceTwoCart.png" />
     <None Remove="size.png" />
     <None Remove="vector.png" />
+    <None Remove="visa.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,9 +50,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="applePay.png" />
+    <EmbeddedResource Include="card.png" />
     <EmbeddedResource Include="color.png" />
     <EmbeddedResource Include="countPill.png" />
     <EmbeddedResource Include="delete.png" />
+    <EmbeddedResource Include="dots.png" />
     <EmbeddedResource Include="frame.png" />
     <EmbeddedResource Include="itemback.png" />
   </ItemGroup>
@@ -64,6 +73,8 @@
     <EmbeddedResource Include="itemJacketTwo.png" />
     <EmbeddedResource Include="itemone.png" />
     <EmbeddedResource Include="itemtwo.png" />
+    <EmbeddedResource Include="MasterCard.png" />
+    <EmbeddedResource Include="PayPal.png" />
     <EmbeddedResource Include="priceone.png" />
     <EmbeddedResource Include="pricesOneCart.png" />
     <EmbeddedResource Include="pricetwo.png" />
@@ -71,6 +82,7 @@
     <EmbeddedResource Include="priceTwoCart.png" />
     <EmbeddedResource Include="size.png" />
     <EmbeddedResource Include="vector.png" />
+    <EmbeddedResource Include="visa.png" />
   </ItemGroup>
 
   <ItemGroup>

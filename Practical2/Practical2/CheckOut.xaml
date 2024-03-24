@@ -9,9 +9,46 @@
                 <Label  Text="CheckOut" TextColor="Black" FontSize="20" FontAttributes="Bold" WidthRequest="100" HorizontalOptions="CenterAndExpand"></Label>
                 <Button x:Name="btnBag" CornerRadius="50" WidthRequest="50" HorizontalOptions="End"></Button>
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" Padding="20">
                 <Label Text="Master Card" TextColor="Black" FontAttributes="Bold" FontSize="20"/>
-                <Line X1="70" X2="80" Stroke="Black" StrokeDashArray="1,1" StrokeDashOffset="1" HeightRequest="500"/>
+                <Image x:Name="dots" Margin="200, 0,0,0" WidthRequest="20"/>
+            </StackLayout>
+            <Image x:Name="card" WidthRequest="380" HeightRequest="220"/>
+            <StackLayout Orientation="Horizontal" Padding="20">
+                <Label Text="Choose Payment" TextColor="Black" FontAttributes="Bold" FontSize="20"/>
+                <Image x:Name="dots2" Margin="200, 0,0,0" WidthRequest="20"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="20" WidthRequest="380">
+                <Button x:Name="masterCard" CornerRadius="6" WidthRequest="80" HeightRequest="60"/>
+                <Button x:Name="applePay" CornerRadius="6" WidthRequest="80" HeightRequest="60"/>
+                <Button x:Name="payPal" CornerRadius="6" WidthRequest="80" HeightRequest="60"/>
+                <Button x:Name="visa" CornerRadius="6" WidthRequest="80" HeightRequest="60"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="20">
+                <Label Text="Promo Or voucher" TextColor="Black" FontAttributes="Bold" FontSize="20"/>
+                <Image x:Name="dots3" Margin="200, 0,0,0" WidthRequest="20"/>
+            </StackLayout>
+            <StackLayout Padding="20">
+                <Frame BackgroundColor="#F6F6F6" CornerRadius="20">
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Add Your Code" FontSize="20" FontAttributes="Bold" TextColor="Black" TextTransform="Uppercase"/>
+                            <Button BorderColor="#EB6434" BorderWidth="1" CornerRadius="20" Text="Fun10" FontAttributes="Bold" Margin="80, 0 , 0, 0" FontSize="20" WidthRequest="100"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <StackLayout Orientation="Horizontal" Padding="20">
+                    <Label Text="Total" FontSize="16"/>
+                    <Label Text="$2270" TextColor="Black" FontSize="18" Margin="220, 0 , 0, 0"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Padding="20">
+                <Frame WidthRequest="350" BackgroundColor="Black" CornerRadius="21">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Checkout" TextColor="White" FontAttributes="Bold" TextTransform="Uppercase" FontSize="18"/>
+                        <Image x:Name="checkOut" Margin="180, 0, 0,0"></Image>
+                    </StackLayout>
+                </Frame>
             </StackLayout>
         </StackLayout>
     </ScrollView>
