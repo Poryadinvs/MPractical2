@@ -32,5 +32,11 @@ namespace Practical2
             MainPage MP = new MainPage();
             Application.Current.MainPage = MP;
         }
+
+        private void btnBag_Clicked(object sender, EventArgs e)
+        {
+            Cart cart = new Cart();
+            Application.Current.MainPage = cart;
+        }
     }
 }

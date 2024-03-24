@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practical2.Cart">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="20">
+                <Button x:Name="btnBack" CornerRadius="50" WidthRequest="50" HorizontalOptions="Start" Clicked="btnBack_Clicked"></Button>
+                <Label  Text="My Cart" TextColor="Black" FontSize="25" FontAttributes="Bold" WidthRequest="100" HorizontalOptions="CenterAndExpand"></Label>
+                <Button x:Name="btnBag" CornerRadius="50" WidthRequest="50" HorizontalOptions="End"></Button>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="20" HeightRequest="163">
+                <Image x:Name="JacketOne" Aspect="Fill" WidthRequest="163"/>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Avoine Hooded" FontSize="24" TextColor="Black"/>
+                    <Label Text="Quilted Jacket" FontSize="24" TextColor="Black"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Size:" FontSize="16" TextColor="Black"/>
+                        <Label Text="Medium" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+                    </StackLayout>
+                    <Image x:Name="price1" HorizontalOptions="Start" Aspect="AspectFill" HeightRequest="110" WidthRequest="210" Margin="-50, -25, 0 ,0"></Image>
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="countPill"/>
+                        <Button x:Name="btnDeleteFromCart" CornerRadius="6" WidthRequest="40" HeightRequest="10" HorizontalOptions="End" BackgroundColor="Black" Margin="120, -35,0,0"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="20" HeightRequest="163">
+                <Image x:Name="JacketTwo" Aspect="Fill" WidthRequest="163"/>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Avoine Hooded" FontSize="24" TextColor="Black"/>
+                    <Label Text="Quilted Jacket" FontSize="24" TextColor="Black"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Size:" FontSize="16" TextColor="Black"/>
+                        <Label Text="Medium" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+                    </StackLayout>
+                    <Image x:Name="price2" HorizontalOptions="Start" Aspect="AspectFill" HeightRequest="110" WidthRequest="210" Margin="-50, -25, 0 ,0"></Image>
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="countPill2"/>
+                        <Button x:Name="btnDeleteFromCart2" CornerRadius="6" WidthRequest="40" HeightRequest="40" HorizontalOptions="End" BackgroundColor="Black" Margin="120, -35,0,0"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Padding="20">
+                <Frame BackgroundColor="#F6F6F6" CornerRadius="20">
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Promo Or voucher" FontSize="14" FontAttributes="Bold" TextColor="Black" TextTransform="Uppercase"/>
+                            <Button BorderColor="#EB6434" BorderWidth="1" CornerRadius="20" Text="Fun10" FontAttributes="Bold" Margin="80, 0 , 0, 0" FontSize="20" WidthRequest="100"/>
+                        </StackLayout>
+                        <Label Text="Payment Amount" TextColor="Black" FontSize="18"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Sub Total" FontSize="16"/>
+                            <Label Text="$2250" TextColor="Black" FontSize="18" Margin="185, 0 , 0, 0" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Shipping Fee" FontSize="16"/>
+                            <Label Text="$20.00" TextColor="Black" FontSize="18" Margin="160, 0 , 0, 0"/>
+                        </StackLayout>
+                        <Line X1="0" X2="600" Stroke="Black"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Total" FontSize="16"/>
+                            <Label Text="$2270" TextColor="Black" FontSize="18" Margin="220, 0 , 0, 0"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Padding="20">
+                <!--<Frame WidthRequest="350" BackgroundColor="Black" CornerRadius="21">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Checkout" TextColor="White" FontAttributes="Bold" TextTransform="Uppercase" FontSize="18"/>
+                        <Image x:Name="checkOut" Margin="180, 0, 0,0"></Image>
+                    </StackLayout>
+                </Frame>-->
+                <Button Text="Checkout" WidthRequest="350" CornerRadius="20" BackgroundColor="Black" TextColor="White" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

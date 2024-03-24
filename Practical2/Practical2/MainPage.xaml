@@ -8,7 +8,7 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="20">
                 <Button x:Name="btnCategory" CornerRadius="50" WidthRequest="50" HorizontalOptions="Start" Clicked="btnCategory_Clicked"></Button>
                 <Image  x:Name="logo" WidthRequest="100" HorizontalOptions="CenterAndExpand"></Image>
-                <Button x:Name="btnBag" CornerRadius="50" WidthRequest="50" HorizontalOptions="End"></Button>
+                <Button x:Name="btnBag" CornerRadius="50" WidthRequest="50" HorizontalOptions="End" Clicked="btnBag_Clicked"></Button>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="20">
                 <Frame BackgroundColor="#F4C600" WidthRequest="150" HeightRequest="150" CornerRadius="21">

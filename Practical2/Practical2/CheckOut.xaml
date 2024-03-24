@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practical2.CheckOut">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="20">
+                <Button x:Name="btnBack" CornerRadius="50" WidthRequest="50" HorizontalOptions="Start" Clicked="btnBack_Clicked"></Button>
+                <Label  Text="CheckOut" TextColor="Black" FontSize="20" FontAttributes="Bold" WidthRequest="100" HorizontalOptions="CenterAndExpand"></Label>
+                <Button x:Name="btnBag" CornerRadius="50" WidthRequest="50" HorizontalOptions="End"></Button>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Master Card" TextColor="Black" FontAttributes="Bold" FontSize="20"/>
+                <Line X1="70" X2="80" Stroke="Black" StrokeDashArray="1,1" StrokeDashOffset="1" HeightRequest="500"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
