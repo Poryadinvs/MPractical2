@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practical2.Login">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="20">
+            <Image  x:Name="logo" WidthRequest="100" HorizontalOptions="CenterAndExpand"></Image>
+        </StackLayout>
+        <StackLayout>
+            <Entry x:Name="emailEntry" Placeholder="Ваш email" />
+            <Entry x:Name="passwordEntry" Placeholder="Ваш пароль" IsPassword="True" />
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Войти" x:Name="EnterButton" Clicked="EnterButton_Clicked" CornerRadius="21" BackgroundColor="White" TextColor="Black" />
+                <Button Text="Регистрация" Clicked="RegistrationButton_Clicked" CornerRadius="21" BackgroundColor="Black" TextColor="White" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

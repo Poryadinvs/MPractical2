@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practical2.Registration">
+    
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,60,0,0">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="20">
+            <Image  x:Name="logo" WidthRequest="100" HorizontalOptions="CenterAndExpand"></Image>
+        </StackLayout>
+        <StackLayout>
+            <Entry x:Name="firstNameEntry" Placeholder="Имя" />
+            <Entry x:Name="lastNameEntry" Placeholder="Фамилия" />
+            <Entry x:Name="emailEntry" Placeholder="Почта" />
+            <Entry x:Name="passwordEntry" Placeholder="Пароль" IsPassword="True" />
+            <!--<Entry x:Name="confirmPasswordEntry" Placeholder="Подтвердите пароль" IsPassword="True" />-->
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="RegistrationButton" Clicked="RegistrationButton_Clicked" Text="Зарегистрироваться"  CornerRadius="21" BackgroundColor="White" TextColor="Black" />
+                <Button Text="Войти" Clicked="LoginButton_Clicked" CornerRadius="21" BackgroundColor="Black" TextColor="White" />
+            </StackLayout>
+            <!--<CollectionView x:Name="Test">
+    <CollectionView.ItemTemplate>
+        <DataTemplate>
+            <StackLayout>
+                <Label Text="{Binding Name}"></Label>
+                <Label Text="{Binding LasyName}"></Label>
+                <Label Text="{Binding Email}"></Label>
+                <Label Text="{Binding Password}"></Label>
+            </StackLayout>
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+</CollectionView>-->
+        </StackLayout>
+        
+    </StackLayout>
+</ContentPage>
